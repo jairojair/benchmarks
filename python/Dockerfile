@@ -1,6 +1,6 @@
 FROM python:3.9-alpine AS base
 
-RUN apk add --update \
+RUN apk add --update  \
 	postgresql-dev \
 	gcc \
 	musl-dev \

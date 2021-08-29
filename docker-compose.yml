@@ -13,3 +13,17 @@ services:
       target: flask
     ports:
       - 5000:5000
+
+  echo:
+    build:
+      context: ./golang
+      target: echo
+    ports:
+      - 1323:1323
+
+  gin:
+    build:
+      context: ./golang
+      target: gin
+    ports:
+      - 8080:8080
